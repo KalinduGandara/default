@@ -1,0 +1,9 @@
+[package]
+org = "kalindugandara"
+name = "devant_test"
+version = "0.1.0"
+distribution = "2201.13.4"
+title = "devant test"
+
+[build-options]
+sticky = true
