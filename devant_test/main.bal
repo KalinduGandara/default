@@ -15,3 +15,19 @@ service /mongo on httpDefaultListener {
     }
 
 }
+
+listener http:Listener httpDefaultListener1 = http:getDefaultListener();
+
+service /sql on httpDefaultListener1 {
+    resource function get user() returns json|error {
+        do {
+            string var1 = "hello";
+            return var1;
+        } on fail error err {
+            // handle error
+            return error("unhandled error", err);
+        }
+    }
+
+}
+
