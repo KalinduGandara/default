@@ -1,0 +1,5 @@
+schemaVersion: '1.2'
+dependencies:
+  connectionReferences:
+    - name: ftp
+      resourceRef: thirdparty:ftp/v1
